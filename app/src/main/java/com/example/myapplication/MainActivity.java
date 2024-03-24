@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         signUpButton = findViewById(R.id.signUpButton);
         exitButton = findViewById(R.id.exitButton);
 
-        // Set click listeners---- jdidfi--0ipjjoij
+        // Set click listeners
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
