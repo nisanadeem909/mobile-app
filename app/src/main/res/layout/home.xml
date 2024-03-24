@@ -4,11 +4,69 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="35dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back"
+        android:onClick="onBackArrowClick"
+        android:src="@drawable/arrow" />
+
     <TextView
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the Home Page!"
-        android:textSize="24sp"
-        android:layout_centerInParent="true" />
+        android:text="GUI Demo 20L-1141"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        />
+
+    <!-- Horizontal LinearLayout for Icons -->
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        >
+
+        <!-- Icon 1 -->
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon1"
+            android:contentDescription="Icon 1"
+            android:onClick="onIcon1Click"
+            android:layout_marginEnd="120dp"
+            />
+
+        <!-- Icon 2 -->
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon2"
+            android:contentDescription="Icon 2"
+            android:onClick="onIcon2Click"
+            />
+
+        <!-- Add more icons as needed -->
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iconLayout"
+        android:layout_marginTop="16dp"
+        />
 
 </RelativeLayout>

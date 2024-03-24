@@ -21,12 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_activity);
 
-
-        // Initialize buttons
         signUpButton = findViewById(R.id.signUpButton);
         exitButton = findViewById(R.id.exitButton);
 
-        // Set click listeners
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Close the app upon Exit button click
-                finish();
+
+                finishAffinity();
             }
         });
     }

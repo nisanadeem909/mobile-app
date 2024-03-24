@@ -10,4 +10,5 @@
     <string name="login_text">Already have an account? <font color="#6495ED"><u>Login</u></font></string>
     <string name="sign_up">Sign Up</string>
     <string name="exit">Exit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
