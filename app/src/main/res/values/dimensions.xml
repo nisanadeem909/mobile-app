@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_text_margin">16dp</dimen>
+    <dimen name="edit_text_margin_top">16dp</dimen>
+    <dimen name="edit_text_margin_topP">236dp</dimen>
+    <dimen name="logo_margin_bottom">24dp</dimen>
+    <dimen name="button_margin_top">24dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+    <dimen name="small_logo_margin_top">16dp</dimen>
+    <dimen name="edit_text_padding_horizontal">16dp</dimen>
+    <dimen name="radio_button_spacing">35dp</dimen>
+    <dimen name="button_spacing">70dp</dimen>
+
+
+    <!-- Padding -->
+    <dimen name="edit_text_padding">12dp</dimen> <!-- Adjust as needed -->
+
+
+</resources>

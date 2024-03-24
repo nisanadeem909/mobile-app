@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hint_color">#888888</color> <!-- Adjust the color code as needed -->
+    <color name="input_line_color">#888888</color> <!-- Adjust the color code as needed -->
+    <color name="yellow">#FFFF00</color>
+
+</resources>

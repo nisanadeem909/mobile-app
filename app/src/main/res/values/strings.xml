@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="reenter_password_hint">Retype Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="login_text">Already have an account? <font color="#6495ED"><u>Login</u></font></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="exit">Exit</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/small_logo_margin_top"
+        android:src="@drawable/logo" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_text_margin_topP"
+        android:paddingStart="@dimen/edit_text_padding_horizontal"
+        android:paddingEnd="@dimen/edit_text_padding_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/firstNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/input_line_color"
+            android:hint="@string/firstname_hint"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_marginTop="@dimen/edit_text_margin_top"
+            android:layout_marginStart="@dimen/edit_text_margin"
+            android:layout_marginEnd="@dimen/edit_text_margin" />
+
+        <EditText
+            android:id="@+id/lastNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/input_line_color"
+            android:hint="@string/lastname_hint"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_marginTop="@dimen/edit_text_margin_top"
+            android:layout_marginStart="@dimen/edit_text_margin"
+            android:layout_marginEnd="@dimen/edit_text_margin" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/input_line_color"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_marginTop="@dimen/edit_text_margin_top"
+            android:layout_marginStart="@dimen/edit_text_margin"
+            android:layout_marginEnd="@dimen/edit_text_margin" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/input_line_color"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_marginTop="@dimen/edit_text_margin_top"
+            android:layout_marginStart="@dimen/edit_text_margin"
+            android:layout_marginEnd="@dimen/edit_text_margin" />
+
+        <EditText
+            android:id="@+id/reEnterPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/input_line_color"
+            android:hint="@string/reenter_password_hint"
+            android:inputType="textPassword"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_marginTop="@dimen/edit_text_margin_top"
+            android:layout_marginStart="@dimen/edit_text_margin"
+            android:layout_marginEnd="@dimen/edit_text_margin" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/edit_text_padding_horizontal"
+                android:paddingEnd="@dimen/edit_text_padding_horizontal"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hint_color"
+                    android:backgroundTint="@color/yellow"
+                    android:text="@string/male"
+                     />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textColor="@color/hint_color"
+                    android:backgroundTint="@color/yellow"
+                    android:layout_marginStart="@dimen/radio_button_spacing"
+                     />
+
+
+
+            </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/button_margin_top">
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/button_spacing"
+                android:layout_marginStart="@dimen/button_spacing"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="@string/sign_up" />
+
+            <Button
+                android:id="@+id/exitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:text="@string/exit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="@string/login_text"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
